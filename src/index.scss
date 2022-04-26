@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "./styles/login";
+@import "./styles/auth";
+@import "./styles/lista-tarea";
+@import "./styles/loading";
+@import "./styles/logout";

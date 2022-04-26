@@ -1,0 +1,161 @@
+.lista-tarea {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .lista-tarea__container {
+        //border: 1px solid #333;
+        //box-shadow: 1px 1px 1px 1px #333;
+        width: 95%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+        margin-top: 20px;
+
+        .lista-tarea__h2 {
+            margin-bottom: 20px;
+        }
+
+        .lista-tarea__formulario {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .lista-tarea__input {
+                height: 30px;
+                width: 600px;
+            }
+        }
+
+        .lista-tarea__filtros {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+
+            button{
+                cursor: pointer;
+                border: 0;
+                padding: 10px 5px;
+                color: #fff;
+            }
+
+            .lista-tarea__todos{
+                background-color: cornflowerblue;
+            }
+            .lista-tarea__completos{
+                background-color: limegreen;
+            }
+            .lista-tarea__incompletos{
+                background-color: crimson;
+            }
+        }
+
+        .lista-tarea__container2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            overflow: scroll;
+            margin-top: 10px;
+            padding-top: 50px;
+
+            .lista-tarea__tareas {
+                display: grid;
+                grid-template-areas: 'p p p i b';
+                grid-gap: 10px;
+                align-items: center;
+                border: 1px solid #333;
+                padding: 10px 5px;
+                margin: 2px 0;
+                .lista-tarea__p{
+                    grid-area: p;
+                }
+                .lista-tarea__p-completado{
+                    text-decoration: line-through;
+                    opacity: 0.8;
+                }
+                .lista-tarea__input{
+                    grid-area: i;
+                    cursor: pointer;
+                }
+                .lista-tarea__button{
+                    grid-area: b;
+                    cursor: pointer;
+                    border: 0;
+                    padding: 10px 5px;
+                    background-color: brown;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 400px){
+    .lista-tarea{
+        .lista-tarea__container{
+            .lista-tarea__container2{
+                .lista-tarea__tareas{
+                    grid-gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .lista-tarea{
+        .lista-tarea__container {
+            border: 1px solid #333;
+            box-shadow: 1px 1px 1px 1px #333;
+            margin-top: 90px;
+
+            .lista-tarea__filtros{
+                width: 400px;
+                grid-gap: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    .lista-tarea{
+        .lista-tarea__container{
+            .lista-tarea__filtros{
+                button{
+                    font-size: 17px;
+                }
+            }
+            .lista-tarea__container2{
+                padding-top: 100px;
+                .lista-tarea__tareas{
+                    .lista-tarea__button{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .lista-tarea{
+        .lista-tarea__container{
+            .lista-tarea__container2{
+                .lista-tarea__tareas{
+                    width: 100%;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+}
