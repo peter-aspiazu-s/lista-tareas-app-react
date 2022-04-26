@@ -7,7 +7,7 @@
 
     .auth__container{
         width: 270px;
-        height: 350px;
+        height: 400px;
         border: 1px solid #ccc;
         box-shadow: 1px 1px 1px 1px #333;
         display: flex;
@@ -72,7 +72,7 @@
     .auth{
         .auth__container{
             width: 450px;
-            height: 400px;
+            height: 420px;
 
             .auth__form {
                 .auth__input-nombre, .auth__input-email, .auth__input-password, .auth__input-password2{

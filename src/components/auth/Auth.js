@@ -108,6 +108,7 @@ export const Auth = () => {
                         onChange={handleInputChange}
                     />
                     <button
+                        className="btn"
                         onClick={handleSubmit} 
                     >Submit</button>
                 </form>

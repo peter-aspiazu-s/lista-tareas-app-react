@@ -47,7 +47,7 @@ export const Login = () => {
                         className="login__input-password"
                         onChange={handleInputChange}
                     />
-                    <button onClick={handleSubmit}>log in</button>
+                    <button className="btn" onClick={handleSubmit}>log in</button>
                 </form>
                 <Link 
                     className="login__link"
